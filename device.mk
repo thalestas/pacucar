@@ -31,3 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	com.android.car.radio.demo.dual=true \
 
 #PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=250
+
+# Override heap growth limit due to high display density on device
+PRODUCT_PROPERTY_OVERRIDES += \
+            dalvik.vm.heapgrowthlimit=256m
